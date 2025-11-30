@@ -1,5 +1,5 @@
-#ifndef CRIARSVG_H
-#define CRIARSVG_H
+#ifndef criarsvg_h
+#define criarsvg_h
 
 #include <stdio.h>
 #include <stdlib.h>

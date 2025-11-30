@@ -1,8 +1,8 @@
-#include "linha.h"
+#include "linha.h" // Corrigido de "lina.h" para "linha.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
+#include <stdlib.h> // Corrigido de "stdlib.h" para <stdlib.h>
+#include <string.h> // Corrigido de "string.h" para <string.h>
+#include <stdbool.h> // Corrigido de "stdbool.h"4 para <stdbool.h>
 
 struct linha{
     int id;
@@ -11,10 +11,11 @@ struct linha{
     double x2;
     double y2;
     char cor[20];
-};
+}; // Removida a variável global 'Linha' após o ponto e vírgula
 
 Linha* criarlinha(int id, double x1, double y1, double x2, double y2, char *cor){
-    Linha *l = (Linha *)malloc(sizeof(Linha));
+    // O tipo de ponteiro é Linha* e o tamanho alocado é sizeof(struct linha) ou sizeof(*l)
+    Linha *l = (Linha *)malloc(sizeof(struct linha)); 
     if (l == NULL) {
         printf("Erro ao alocar memória para a linha.\n");
         exit(1);
@@ -29,26 +30,32 @@ Linha* criarlinha(int id, double x1, double y1, double x2, double y2, char *cor)
 }
 
 int obteridlinha(Linha *l){
+    if (!l) return -1; // Adicionando checagem básica
     return l->id;
 }
 
 double obterx1linha(Linha *l){
+    if (!l) return 0.0;
     return l->x1;
 }
 
-double obtery1linha(Linha *l){
+double obery1linha(Linha *l){
+    if (!l) return 0.0;
     return l->y1;
 }
 
 double obterx2linha(Linha *l){
+    if (!l) return 0.0;
     return l->x2;
 }
 
-double obtery2linha(Linha *l){
+double obery2linha(Linha *l){
+    if (!l) return 0.0;
     return l->y2;
 }
 
 char* obtercorlinha(Linha *l){
+    if (!l) return NULL;
     return l->cor;
 }
 

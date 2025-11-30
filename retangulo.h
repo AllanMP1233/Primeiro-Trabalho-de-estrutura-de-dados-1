@@ -1,5 +1,5 @@
-#ifndef RETANGULO_H
-#define RETANGULO_H
+#ifndef retangulo_h
+#define retangulo_h
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,5 +1,5 @@
-#ifndef PILHA_H
-#define PILHA_H
+#ifndef pilha_h
+#define pilha_h
 
 #include <stdio.h>
 #include <stdlib.h>

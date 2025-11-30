@@ -1,5 +1,5 @@
-#ifndef GEO_H
-#define GEO_H
+#ifndef geo_h
+#define geo_h
 
 #include <stdio.h>
 #include <stdlib.h>

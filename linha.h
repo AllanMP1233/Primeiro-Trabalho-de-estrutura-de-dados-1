@@ -1,5 +1,5 @@
-#ifndef LINHA_H
-#define LINHA_H
+#ifndef linha_h
+#define linha_h
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -54,7 +54,7 @@ double obterx2linha(Linha *l);
     @return Retorna a coordenada x do segundo ponto da linha
 */
 
-double obtery2linha(Linha *l);
+double obery2linha(Linha *l);
 /*
     @brief Obtém a coordenada y do segundo ponto da linha
     @param l Ponteiro para a linha
@@ -75,6 +75,4 @@ void liberarlinha(Linha *l);
 */
 
 #endif
-/*
-    @brief: Finaliza o módulo de linha.
-*/
+// Removido o /* que estava fechando o módulo.

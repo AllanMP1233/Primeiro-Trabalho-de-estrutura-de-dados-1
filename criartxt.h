@@ -4,24 +4,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
-#include <stdbool.h>
 
+void gerartxt(char *nomearqtxt, int id, double x, double y, char *conteudo, char *cor);
 /*
-criartxt cria arquivos de textos
-*/
-
-void criartxt(int id, double x, double y, char *conteudo, char *cor);
-/*
-    @brief Cria um arquivo de texto com as informações especificadas
-    @param id Identificador do texto
-    @param x Coordenada x do texto
-    @param y Coordenada y do texto
-    @param conteudo Conteúdo do texto
-    @param cor Cor do texto
+    @brief Escreve os dados de um elemento de texto no relatório TXT.
+    @param nomearqtxt Nome do ficheiro de saída.
+    @param id ID do texto.
+    @param x Coordenada X.
+    @param y Coordenada Y.
+    @param conteudo O texto propriamente dito.
+    @param cor A cor do texto.
 */
 
 #endif
-/*
-    @brief: Finaliza o módulo de criartxt.
-*/

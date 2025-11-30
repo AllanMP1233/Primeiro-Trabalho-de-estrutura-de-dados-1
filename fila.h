@@ -1,5 +1,5 @@
-#ifndef FILA_H
-#define FILA_H
+#ifndef fila_h
+#define fila_h
 
 #include <stdio.h>
 #include <stdlib.h>
